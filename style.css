@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4203a9, #90bafc);
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;  /* Reduced max-width for better mobile fit */
+  text-align: center;
+}
+
+.calculator h1 {
+  font-size: 45px;  /* Smaller font size for mobile */
+}
+
+.calculator h1 span {
+  color: #ffff76;
+}
+
+.input-box {
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 10px;
+  background: rgba(255,255,255, 0.3);
+  display: flex;
+  flex-direction: column;  /* Stack elements on mobile */
+  align-items: center;
+  gap: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.input-box button {
+  background: #ffff76;
+  border: 0;
+  outline: 0;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#result {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#result span {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 480px) {
+  .calculator h1 {
+    font-size: 35px;  /* Even smaller font for tiny screens */
+  }
+
+  .input-box {
+    padding: 20px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+  }
+
+  .input-box button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+}
+
+
